@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>Termos de Serviço — Dinno App</title>
+    <meta
+      name="description"
+      content="As regras de uso do Dinno App: quem pode criar conta, como funcionam as missões e o Starcoin, o que a assinatura vai cobrar, responsabilidades de responsável e criança e quando uma conta pode ser encerrada."
+    />
+    <link rel="canonical" href="https://rodprado128.github.io/dinno-terms-of-service/" />
+    <meta name="theme-color" content="#fffdf5" />
+    <meta name="color-scheme" content="light" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dinno App" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://rodprado128.github.io/dinno-terms-of-service/" />
+    <meta property="og:title" content="Termos de Serviço — Dinno App" />
+    <meta
+      property="og:description"
+      content="Quem pode usar o Dinno App, como funcionam missões e Starcoin, o que a assinatura vai cobrar e as responsabilidades de cada lado."
+    />
+    <meta property="og:image" content="https://rodprado128.github.io/dinno-terms-of-service/assets/og-dinno.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="O mascote do Dinno, um dinossauro astronauta azul, segurando uma moeda Starcoin dourada."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Termos de Serviço — Dinno App" />
+    <meta
+      name="twitter:description"
+      content="Quem pode usar o Dinno App, como funcionam missões e Starcoin, o que a assinatura vai cobrar e as responsabilidades de cada lado."
+    />
+    <meta name="twitter:image" content="https://rodprado128.github.io/dinno-terms-of-service/assets/og-dinno.png" />
+
+    <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Termos de Serviço — Dinno App",
+        "url": "https://rodprado128.github.io/dinno-terms-of-service/",
+        "inLanguage": "pt-BR",
+        "description": "Termos de serviço do Dinno App: elegibilidade, descrição do serviço, natureza do Starcoin, assinatura, responsabilidades, conduta proibida e encerramento de conta.",
+        "dateModified": "2026-09-15"
+      }
+    </script>
+
+    <style>
+      /* ====================================================================
+         Documento legal do Dinno. HTML + CSS puro, um arquivo, sem script,
+         sem framework e SEM NENHUMA REQUISIÇÃO EXTERNA — nem fonte de CDN.
+         Tipografia do sistema para parágrafo longo; a marca entra pela cor e
+         pela logo.
+
+         Estes termos falam de dinheiro e de moeda virtual: o acento aqui é o
+         dourado do Starcoin (`--color-moeda-text` do tema claro do app),
+         enquanto a política de privacidade usa o roxo da marca. As duas cores
+         são tokens reais de `app/globals.css`, não paleta inventada.
+         ==================================================================== */
+
+      :root {
+        --fundo: #fffdf5;
+        --superficie: #ffffff;
+        --texto: #1a1430;
+        --texto-suave: #544b78;
+        --contorno: #e7dfc4;
+        --marca: #7a5a00;
+        --marca-clara: #c4900a;
+        --destaque-fundo: #fff5da;
+        --gutter: 1.25rem;
+        --largura: 44rem;
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--fundo);
+        color: var(--texto);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .envelope {
+        width: 100%;
+        max-width: var(--largura);
+        margin: 0 auto;
+        padding-inline: var(--gutter);
+      }
+
+      /* --- Cabeçalho ---------------------------------------------------- */
+      .cabecalho {
+        border-bottom: 2px solid var(--contorno);
+        background: var(--superficie);
+        padding-block: 1rem;
+      }
+
+      .marca {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.625rem;
+        text-decoration: none;
+        color: var(--texto);
+        font-weight: 700;
+        font-size: 1.125rem;
+        min-height: 44px;
+      }
+
+      .marca img {
+        width: 40px;
+        height: 34px;
+        object-fit: contain;
+      }
+
+      /* --- Corpo -------------------------------------------------------- */
+      main {
+        padding-block: 2.5rem 3rem;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.75rem, 5vw, 2.25rem);
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        color: var(--marca);
+      }
+
+      .atualizado {
+        margin: 0 0 2rem;
+        color: var(--texto-suave);
+        font-size: 0.9375rem;
+      }
+
+      h2 {
+        margin: 2.5rem 0 0.75rem;
+        font-size: 1.3125rem;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        scroll-margin-top: 1rem;
+      }
+
+      h3 {
+        margin: 1.5rem 0 0.5rem;
+        font-size: 1.0625rem;
+        line-height: 1.4;
+        color: var(--texto-suave);
+      }
+
+      p,
+      ul,
+      ol {
+        margin: 0 0 1rem;
+      }
+
+      ul,
+      ol {
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.375rem;
+      }
+
+      a {
+        color: var(--marca);
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--texto);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      .sumario {
+        background: var(--superficie);
+        border: 2px solid var(--contorno);
+        border-radius: 1rem;
+        padding: 1.25rem 1.25rem 0.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .sumario h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+
+      .sumario ol {
+        margin-bottom: 0.5rem;
+      }
+
+      .destaque {
+        background: var(--destaque-fundo);
+        border: 2px solid var(--marca-clara);
+        border-radius: 1rem;
+        padding: 1.25rem 1.25rem 0.25rem;
+        margin-block: 1.25rem;
+      }
+
+      .destaque h2,
+      .destaque h3 {
+        margin-top: 0;
+      }
+
+      .destaque h3 {
+        font-size: 1.1875rem;
+        color: var(--texto);
+      }
+
+      .pendente {
+        background: #ffe9c7;
+        border: 1px dashed #9a6b00;
+        border-radius: 4px;
+        padding: 0 0.25rem;
+        font-weight: 700;
+        color: #5a3e00;
+      }
+
+      /* --- Rodapé ------------------------------------------------------- */
+      .rodape {
+        border-top: 2px solid var(--contorno);
+        background: var(--superficie);
+        padding-block: 2rem;
+        color: var(--texto-suave);
+        font-size: 0.9375rem;
+      }
+
+      .rodape ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .rodape a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <div class="envelope">
+        <a class="marca" href="https://dinnoapp.forjadev.app.br/" rel="noopener">
+          <img
+            src="assets/logo-dinno.png"
+            alt="Logo do Dinno App: um dinossauro astronauta azul"
+            width="160"
+            height="134"
+          />
+          <span>Dinno App</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="envelope">
+        <h1>Termos de Serviço</h1>
+        <p class="atualizado">
+          Última atualização: <time datetime="2026-09-15">15 de setembro de 2026</time>
+        </p>
+
+        <p>
+          Estes Termos são o contrato entre você e o Dinno App. Eles valem para o site, o aplicativo
+          web e tudo que você faz dentro dele. Estão escritos para serem lidos: se alguma coisa aqui
+          não estiver clara, escreva para o contato do item 12 antes de criar a conta.
+        </p>
+
+        <nav class="sumario" aria-label="Índice destes termos">
+          <h2>O que tem nesta página</h2>
+          <ol>
+            <li><a href="#aceitacao">Aceitação e quem pode usar</a></li>
+            <li><a href="#servico">O que o Dinno App faz</a></li>
+            <li><a href="#starcoin">Starcoin: o que é e o que não é</a></li>
+            <li><a href="#assinatura">Assinatura (quando for lançada)</a></li>
+            <li><a href="#responsabilidades">Responsabilidades do responsável e da criança</a></li>
+            <li><a href="#conduta">Conduta proibida</a></li>
+            <li><a href="#propriedade">Propriedade intelectual</a></li>
+            <li><a href="#garantia">Isenção e limitação de responsabilidade</a></li>
+            <li><a href="#encerramento">Suspensão e encerramento de conta</a></li>
+            <li><a href="#alteracoes">Alterações nestes Termos</a></li>
+            <li><a href="#lei">Legislação aplicável e foro</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ol>
+        </nav>
+
+        <!-- ================================================================ -->
+        <h2 id="aceitacao">1. Aceitação e quem pode usar</h2>
+        <p>
+          Ao criar uma conta ou usar o Dinno App, você declara que leu, entendeu e aceita estes
+          Termos e a
+          <a href="https://rodprado128.github.io/dinno-privacy-policy/">Política de Privacidade</a>.
+          Se não concordar com algum ponto, não use o serviço.
+        </p>
+        <ul>
+          <li>
+            <strong>A conta principal é de um adulto.</strong> O responsável cria a própria conta e
+            declara ser maior de 18 anos e ter capacidade civil para aceitar estes Termos — por si e
+            pela criança que vincular.
+          </li>
+          <li>
+            <strong>A criança nunca usa o Dinno App sozinha.</strong> Toda conta de criança está
+            vinculada a pelo menos um responsável adulto, que a supervisiona. O vínculo é criado por
+            uma ação explícita do responsável.
+          </li>
+          <li>
+            <strong>Máximo de dois responsáveis por criança</strong>, com exatamente os mesmos
+            poderes: os dois criam missões, aprovam, aplicam multas e marcam saques como pagos.
+          </li>
+          <li>
+            Ao vincular uma criança, o responsável consente com o tratamento dos dados dela conforme
+            a Política de Privacidade, nos termos do art. 14 da LGPD.
+          </li>
+          <li>
+            Você é responsável por manter a senha em segredo e por tudo que acontecer na sua conta.
+            Se suspeitar de acesso indevido, troque a senha e avise pelo contato do item 12.
+          </li>
+        </ul>
+
+        <!-- ================================================================ -->
+        <h2 id="servico">2. O que o Dinno App faz</h2>
+        <p>
+          O Dinno App é uma ferramenta de <strong>mesada gamificada</strong>. Em resumo:
+        </p>
+        <ul>
+          <li>
+            O responsável cria <strong>missões</strong> — tarefas do dia a dia — com prazo e um valor
+            em Starcoin. As missões podem ser avulsas ou recorrentes nos dias da semana escolhidos.
+          </li>
+          <li>
+            A criança aceita a missão, cumpre e envia uma <strong>foto de comprovante</strong>.
+          </li>
+          <li>
+            O responsável <strong>aprova ou reprova</strong>, com motivo. Aprovada, a recompensa em
+            Starcoin entra na carteira da criança.
+          </li>
+          <li>
+            O responsável pode aplicar <strong>multas</strong> (desconto em Starcoin, com motivo
+            registrado no extrato).
+          </li>
+          <li>
+            A criança pode <strong>pedir um saque</strong>; o responsável recebe o pedido com o valor
+            de referência em reais e marca como pago quando fizer a transferência.
+          </li>
+          <li>
+            Há recursos de engajamento: ofensiva (dias seguidos com missão enviada), patentes,
+            apelido e um ranking de amigos por missões aprovadas.
+          </li>
+        </ul>
+        <p>
+          O serviço pode mudar: recursos podem ser acrescentados, alterados ou removidos para
+          melhorar o produto.
+        </p>
+
+        <!-- ================================================================ -->
+        <h2 id="starcoin">3. Starcoin: o que é e o que não é</h2>
+        <div class="destaque">
+          <h3>Leia este item inteiro antes de usar o app com sua família.</h3>
+          <ul>
+            <li>
+              O <strong>Starcoin é uma moeda virtual interna</strong> do Dinno App, criada apenas
+              para pontuar missões dentro do aplicativo.
+            </li>
+            <li>
+              Ele <strong>não tem valor monetário direto fora do app</strong>, não é resgatável
+              contra o Dinno App, não é transferível entre contas e não pode ser comprado.
+            </li>
+            <li>
+              O Starcoin <strong>não é produto financeiro</strong>, não é investimento, não é
+              moeda eletrônica, não é criptoativo e não é meio de pagamento.
+            </li>
+            <li>
+              A conversão exibida (hoje, 100 Starcoin = R$&nbsp;10,00) é uma
+              <strong>referência interna</strong> para a criança entender a ordem de grandeza. Ela
+              pode ser alterada, e não cria obrigação de pagamento por parte do Dinno App.
+            </li>
+            <li>
+              <strong>O pedido de saque é só um registro dentro do app.</strong> O pagamento real —
+              por Pix ou como a família preferir — é combinado e executado
+              <strong>fora do Dinno App</strong>, diretamente entre responsável e criança.
+            </li>
+            <li>
+              <strong>O Dinno App não processa, não intermedia, não custodia e não garante esse
+              pagamento</strong>, e não coleta dado bancário para isso. Marcar um saque como
+              "concluído" no app é uma declaração do responsável, não uma transferência feita pelo
+              Dinno App.
+            </li>
+          </ul>
+        </div>
+
+        <!-- ================================================================ -->
+        <h2 id="assinatura">4. Assinatura (quando for lançada)</h2>
+        <p>
+          <strong>A assinatura paga ainda não foi lançada.</strong> Hoje o uso do Dinno App não é
+          cobrado. Quando a assinatura entrar no ar, valerão as regras abaixo, e você será avisado
+          antes de qualquer cobrança.
+        </p>
+        <ul>
+          <li>
+            <strong>Dois planos:</strong> um <strong>mensal, sem fidelidade</strong>, e um
+            <strong>anual parcelado em até 12 vezes</strong>.
+          </li>
+          <li>
+            O plano anual é uma <strong>venda parcelada</strong>, não uma cobrança recorrente
+            automática: contrata-se o período de doze meses e o pagamento é dividido em parcelas.
+          </li>
+          <li>
+            <strong>A cobrança é processada pelo Asaas</strong>, gateway de pagamento contratado
+            para isso. Os dados de cartão e de Pix da assinatura são tratados pelo Asaas, sob os
+            termos e a política de privacidade dele — o Dinno App não armazena esses dados.
+          </li>
+          <li>
+            <strong>Cancelamento do plano mensal:</strong> pode ser feito a qualquer momento e
+            interrompe as cobranças seguintes. O acesso continua até o fim do período já pago; não
+            há devolução proporcional de período já iniciado.
+          </li>
+          <li>
+            <strong>Direito de arrependimento:</strong> nas compras feitas pela internet, você pode
+            desistir em até 7 dias corridos contados da contratação, conforme o art. 49 do Código de
+            Defesa do Consumidor, com devolução do que foi pago.
+          </li>
+          <li>
+            <strong>Inadimplência:</strong> se um pagamento não for concluído, o acesso aos recursos
+            pagos pode ser suspenso até a regularização. Os dados da conta <strong>não</strong> são
+            apagados por inadimplência; eles seguem as regras de retenção da Política de
+            Privacidade, e você pode pedir exclusão a qualquer momento.
+          </li>
+          <li>
+            <strong>Cancelamento e dados:</strong> cancelar a assinatura não apaga a conta. Para
+            apagar, é preciso pedir exclusão, conforme descrito na Política de Privacidade.
+          </li>
+          <li>Os preços podem mudar; alterações serão avisadas com antecedência e não valem retroativamente.</li>
+        </ul>
+
+        <!-- ================================================================ -->
+        <h2 id="responsabilidades">5. Responsabilidades do responsável e da criança</h2>
+
+        <h3>5.1. Do responsável</h3>
+        <ul>
+          <li>Supervisionar o uso do app pela criança e o conteúdo que ela envia.</li>
+          <li>
+            Criar missões adequadas à idade e à condição da criança. Missões que exponham a criança
+            a risco, a trabalho perigoso ou a constrangimento são proibidas.
+          </li>
+          <li>
+            Honrar o combinado: o Starcoin só significa alguma coisa se o responsável pagar o que
+            prometeu, fora do app. Esse compromisso é dele com a criança, não do Dinno App.
+          </li>
+          <li>Manter e-mail e senha corretos e em segurança, e avisar em caso de acesso indevido.</li>
+          <li>Decidir sobre os dados da criança e exercer, em nome dela, os direitos da LGPD.</li>
+        </ul>
+
+        <h3>5.2. Da criança</h3>
+        <ul>
+          <li>Enviar como comprovante apenas fotos do que ela realmente fez.</li>
+          <li>
+            Não enviar imagem de outra pessoa sem autorização, nem conteúdo ofensivo, impróprio ou
+            que exponha terceiros.
+          </li>
+          <li>Escolher um apelido que não ofenda ninguém nem se passe por outra pessoa.</li>
+          <li>Não compartilhar a senha com colegas.</li>
+        </ul>
+
+        <!-- ================================================================ -->
+        <h2 id="conduta">6. Conduta proibida</h2>
+        <p>Dentro do Dinno App, é proibido:</p>
+        <ul>
+          <li>
+            <strong>Burlar o sistema de missões, saldo ou saques</strong> — forjar comprovante,
+            manipular requisições, explorar falha para creditar Starcoin ou alterar o extrato.
+          </li>
+          <li>Tentar acessar dados de outra família ou de outra criança.</li>
+          <li>
+            Automatizar o uso do serviço (robôs, raspagem, testes de carga) sem autorização escrita.
+          </li>
+          <li>Fazer engenharia reversa, copiar ou redistribuir o aplicativo e seu código.</li>
+          <li>Usar o app para assediar, intimidar, humilhar ou punir uma criança.</li>
+          <li>Enviar conteúdo ilegal, ofensivo, discriminatório ou de conotação sexual.</li>
+          <li>Criar conta de criança sem ser responsável por ela, ou se passar por outra pessoa.</li>
+        </ul>
+        <p>
+          Encontrar uma falha e comunicá-la pelo contato do item 12 é bem-vindo. Explorá-la, não.
+        </p>
+
+        <!-- ================================================================ -->
+        <h2 id="propriedade">7. Propriedade intelectual</h2>
+        <p>
+          O nome <strong>Dinno</strong>, o mascote, a identidade visual, os textos, as telas e o
+          código do aplicativo pertencem aos criadores do Dinno App e são protegidos pela legislação
+          de direito autoral e de propriedade industrial.
+        </p>
+        <p>
+          Enquanto sua conta estiver ativa, você recebe uma licença
+          <strong>pessoal, não exclusiva, intransferível, revogável e não comercial</strong> para usar
+          o aplicativo. Ela não permite copiar, modificar, redistribuir, revender, sublicenciar nem
+          criar obra derivada do serviço ou da marca.
+        </p>
+        <p>
+          O conteúdo que você envia (fotos, nomes, textos de missão) continua sendo seu. Você
+          concede ao Dinno App apenas a autorização necessária para armazenar e exibir esse conteúdo
+          dentro do app às pessoas certas — responsáveis e criança da mesma família — para que o
+          serviço funcione.
+        </p>
+
+        <!-- ================================================================ -->
+        <h2 id="garantia">8. Isenção e limitação de responsabilidade</h2>
+        <ul>
+          <li>
+            O Dinno App é oferecido <strong>"como está"</strong>, sem garantia de que estará sempre
+            disponível, livre de erro ou adequado a um propósito específico.
+          </li>
+          <li>
+            <strong>Não há garantia de disponibilidade ininterrupta.</strong> Pode haver manutenção,
+            instabilidade ou falha de fornecedores de infraestrutura fora do nosso controle.
+          </li>
+          <li>
+            <strong>O Dinno App não responde pelo pagamento combinado entre responsável e criança</strong>,
+            que acontece fora do aplicativo. Se o responsável não pagar o que prometeu, isso é uma
+            questão da família.
+          </li>
+          <li>
+            O Dinno App não responde pelo conteúdo enviado pelos usuários nem pelas decisões
+            educativas tomadas pelo responsável.
+          </li>
+          <li>
+            Na medida máxima permitida pela lei, a responsabilidade do Dinno App por qualquer
+            reclamação relacionada ao serviço fica limitada ao valor efetivamente pago por você nos
+            12 meses anteriores ao fato — e, enquanto o uso for gratuito, esse valor é zero.
+          </li>
+          <li>
+            Nada nestes Termos afasta os direitos que o Código de Defesa do Consumidor garante a
+            você.
+          </li>
+        </ul>
+
+        <!-- ================================================================ -->
+        <h2 id="encerramento">9. Suspensão e encerramento de conta</h2>
+        <ul>
+          <li>
+            <strong>Você pode sair quando quiser.</strong> Basta parar de usar o app e, se desejar
+            apagar os dados, pedir a exclusão conforme a Política de Privacidade.
+          </li>
+          <li>
+            <strong>Podemos suspender ou encerrar uma conta</strong> que viole estes Termos,
+            especialmente o item 6, que coloque uma criança em risco, ou que seja usada para fraude.
+          </li>
+          <li>
+            Sempre que for razoável, avisamos antes e damos chance de correção. Em caso de risco à
+            criança ou de fraude evidente, a suspensão pode ser imediata.
+          </li>
+          <li>
+            Encerrada a conta, o saldo em Starcoin deixa de existir — ele não é conversível contra o
+            Dinno App, como diz o item 3.
+          </li>
+          <li>
+            O Dinno App pode encerrar o serviço como um todo. Nesse caso, os usuários serão avisados
+            com antecedência razoável para que possam salvar o que precisarem.
+          </li>
+        </ul>
+
+        <!-- ================================================================ -->
+        <h2 id="alteracoes">10. Alterações nestes Termos</h2>
+        <p>
+          Estes Termos podem ser atualizados quando o produto mudar — o lançamento da assinatura é o
+          exemplo mais provável. A data de última atualização no topo da página indica a versão
+          vigente. Mudanças relevantes serão avisadas dentro do app ou por e-mail antes de entrar em
+          vigor; continuar usando o serviço depois disso significa aceitar a nova versão.
+        </p>
+
+        <!-- ================================================================ -->
+        <h2 id="lei">11. Legislação aplicável e foro</h2>
+        <p>
+          Estes Termos são regidos pelas leis da <strong>República Federativa do Brasil</strong>,
+          em especial o Código de Defesa do Consumidor (Lei nº 8.078/1990), o Marco Civil da
+          Internet (Lei nº 12.965/2014), a LGPD (Lei nº 13.709/2018) e o Estatuto da Criança e do
+          Adolescente (Lei nº 8.069/1990).
+        </p>
+        <p>
+          Fica eleito o foro do domicílio do consumidor no Brasil para dirimir qualquer controvérsia
+          decorrente destes Termos.
+        </p>
+
+        <!-- ================================================================ -->
+        <h2 id="contato">12. Contato</h2>
+        <p>
+          Dúvida sobre estes Termos, denúncia de uso indevido ou comunicação de falha de segurança:
+          <span class="pendente">[EMAIL_DE_CONTATO_AQUI]</span>.
+        </p>
+        <p>
+          Responsável pelo serviço: <span class="pendente">[RAZAO_SOCIAL_E_CNPJ_AQUI]</span>.
+        </p>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="envelope">
+        <ul>
+          <li><a href="https://rodprado128.github.io/dinno-privacy-policy/">Política de Privacidade</a></li>
+          <li><a href="https://dinnoapp.forjadev.app.br/" rel="noopener">Site do Dinno</a></li>
+          <li><a href="https://dinno-app.vercel.app/" rel="noopener">Abrir o app</a></li>
+        </ul>
+        <p>© <time datetime="2026">2026</time> Dinno App. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

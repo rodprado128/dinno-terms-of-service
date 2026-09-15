@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rodprado128.github.io/dinno-terms-of-service/sitemap.xml
