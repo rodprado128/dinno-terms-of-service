@@ -36,16 +36,13 @@ git push
 
 O Pages reconstrói sozinho em um ou dois minutos.
 
-## Pendências antes de divulgar o link
+## Valores do controlador
 
-O HTML contém dois marcadores visíveis que **precisam ser preenchidos** antes de
-o link ser divulgado publicamente:
-
-- `[RAZAO_SOCIAL_E_CNPJ_AQUI]` — razão social e CNPJ de quem responde pelo serviço;
-- `[EMAIL_DE_CONTATO_AQUI]` — e-mail de contato.
-
-Eles aparecem destacados em amarelo na página, de propósito. Procure por
-`class="pendente"` no `index.html`.
+Os dois campos que nasceram como marcador — razão social/CNPJ e e-mail de
+contato — **já estão preenchidos**: Rodrigo Prado da Silva e
+<rodrigo@forjadev.app.br>. O destaque amarelo de "falta preencher" saiu junto,
+porque destacar um dado real como se fosse pendência confunde quem lê. Se algum
+deles mudar, procure pelo valor no `index.html`.
 
 ## O que estes termos prometem
 
